@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header class="header">
-    <h1 class="header_title">SPLI <br> TTER</h1>
-    
-  </header>
-  <section class="calculator-container">
-    
-  </section>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header_title">
+        SPLI <br />
+        TTER
+      </h1>
+    </header>
+    <section class="calculator-container">
+      <div class="inputs-section">
+        <label for="bill" class="inputs-section__bill-label">Bill</label>
+        <input
+          id="bill"
+          class="inputs-section__bill-input"
+          type="number"
+          value="0"
+        />
+        <fieldset class="btns">
+          <legend class="btns__legend" Select Tip %</legend>
+          <button class="btns__button btns__button--select">5%</button>
+          <button class="btns__button">10%</button>
+          <button class="btns__button">15%</button>
+          <button class="btns__button">20%</button>
+          <button class="btns__button">25%</button>
+        <input type="number" placeholder="Custom">
+        </fieldset>
+        <label for="people" class="inputs-section__people-label">Bill</label>
+        <input
+          id="bill"
+          class="inputs-section__people-input"
+          type="number"
+          value="5"
+        />
+      </div>
+      <div class="result-section">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      </div>
+      <div class="result-section">
+        <p>Tip Amount</p>
+        <p>Person</p>
 
-  Number of People
+      </div>
+    </section>
 
-  Tip Amount
-  / person
+    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset
 
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">santi Dionis</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Santi Dionis</a>.
+    </div>
+  </body>
 </html>
