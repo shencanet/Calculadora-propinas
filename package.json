@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "compass": "^0.1.1",
+    "sass": "^1.57.1"
+  },
+  "name": "calculadora",
+  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shencanet/Calculadora-propinas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shencanet/Calculadora-propinas/issues"
+  },
+  "homepage": "https://github.com/shencanet/Calculadora-propinas#readme"
+}
