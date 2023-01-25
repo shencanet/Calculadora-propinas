@@ -3,9 +3,23 @@
 
 .header_title{
     border: 1px solid red;
-    width: 300px;
-    margin: auto;
+    text-align: center;
+    color: variables.$Dark-grayish-cyan;
+    margin: 30px 0;
+    letter-spacing:8px ;
 
+}
+.calculator-container{
+    background-color: variables.$White;
+    width: 375px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 32px;
+
+}
+.inputs-section__bill-label{
+    border: 1px solid red;
+    display: block;
 }
 
 .attribution{
@@ -15,4 +29,4 @@
 
 .attribution a{
     color: hsl(228, 45%, 44%)
-}
+}                                                                                                                                                       
