@@ -1,0 +1,8 @@
+@use 'variables';
+@mixin label{
+    //border: 1px solid red;
+    display: block;
+    color: variables.$Dark-grayish-cyan;
+    font-size: 0.75em;
+    margin-bottom: 8px;
+}

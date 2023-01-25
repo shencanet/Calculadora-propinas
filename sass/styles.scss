@@ -1,8 +1,9 @@
 @use 'variables';
 @use 'inicial';
+@use 'mixins';
 
 .header_title{
-    border: 1px solid red;
+    //border: 1px solid red;
     text-align: center;
     color: variables.$Dark-grayish-cyan;
     margin: 30px 0;
@@ -18,8 +19,8 @@
 
 }
 .inputs-section__bill-label{
-    border: 1px solid red;
-    display: block;
+
+@include mixins.label;
 }
 
 .attribution{

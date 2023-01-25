@@ -12,7 +12,6 @@ body {
 }
 
 .header_title {
-  border: 1px solid red;
   text-align: center;
   color: hsl(186deg, 14%, 43%);
   margin: 30px 0;
@@ -28,8 +27,10 @@ body {
 }
 
 .inputs-section__bill-label {
-  border: 1px solid red;
   display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
 }
 
 .attribution {
