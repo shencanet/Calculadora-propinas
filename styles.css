@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(185deg, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+}
+
+.header_title {
+  border: 1px solid red;
+  width: 300px;
+  margin: auto;
 }
 
 .attribution {

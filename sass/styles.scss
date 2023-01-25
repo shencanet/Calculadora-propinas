@@ -1,11 +1,13 @@
 @use 'variables';
+@use 'inicial';
 
+.header_title{
+    border: 1px solid red;
+    width: 300px;
+    margin: auto;
 
-
-body{
-    background-color: variables.$Light-grayish-cyan;
-    
 }
+
 .attribution{
     font-size: 11px;
     text-align: center;
