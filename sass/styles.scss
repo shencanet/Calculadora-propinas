@@ -22,6 +22,11 @@
 
 @include mixins.label;
 }
+.inputs-section__bill-input{
+    
+@include mixins.input;
+}
+
 
 .attribution{
     font-size: 11px;

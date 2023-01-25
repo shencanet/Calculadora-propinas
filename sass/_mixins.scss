@@ -6,3 +6,18 @@
     font-size: 0.75em;
     margin-bottom: 8px;
 }
+
+@mixin input{
+    font-family: variables.$font;
+    font-size: 1em;
+    border: 1px solid red;
+    border-radius: 4px;
+    text-align: right;
+    border: none;
+    caret-color: variables.$Strong-cyan;
+    width: 100%;
+    height: 48px;
+    background-color: variables.$Very-light-grayish-cyan;
+    &
+
+}

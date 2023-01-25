@@ -1,45 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *    ,
+ * 21 |     &
+ *    |      ^
+ *    '
+ *   sass\_mixins.scss 21:6  @use
+ *   sass\styles.scss 3:1    root stylesheet */
 
-body {
-  background-color: hsl(185deg, 41%, 84%);
-  font-family: "Space Mono", monospace;
-  font-size: 24px;
-}
-
-.header_title {
-  text-align: center;
-  color: hsl(186deg, 14%, 43%);
-  margin: 30px 0;
-  letter-spacing: 8px;
-}
-
-.calculator-container {
-  background-color: hsl(0deg, 0%, 100%);
-  width: 375px;
-  margin: auto;
-  border-radius: 16px;
-  padding: 32px;
-}
-
-.inputs-section__bill-label {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  color: hsl(186deg, 14%, 43%);
-  font-size: 0.75em;
-  margin-bottom: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 21 \2502      &\d\a    \2502       ^\a    \2575 \a   sass\\_mixins.scss 21:6  @use\a   sass\\styles.scss 3:1    root stylesheet';
 }
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
-}
-
-/*# sourceMappingURL=styles.css.map */
