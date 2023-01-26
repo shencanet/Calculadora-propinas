@@ -18,6 +18,12 @@
     width: 100%;
     height: 48px;
     background-color: variables.$Very-light-grayish-cyan;
-    &
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
+        outline: none;
+        
+    }
 
 }
