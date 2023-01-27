@@ -24,7 +24,7 @@
 }
 .inputs-section__bill-input{
     
-@include mixins.input;
+@include mixins.input('../images/icon-dollar.svg');
 }
 
 
