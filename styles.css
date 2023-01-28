@@ -45,9 +45,12 @@ body {
   width: 100%;
   height: 48px;
   background-color: hsl(189deg, 41%, 97%);
-  background: url("../images/icon-dollar.svg");
+  background-image: url("../images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position: 10px center;
+  /*
+  background-repeat: no-repeat;
+  background-position: 10px center;*/
 }
 .inputs-section__bill-input:hover {
   cursor: pointer;
