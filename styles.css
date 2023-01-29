@@ -171,14 +171,16 @@ body {
   border-radius: 12px;
   padding: 42px 24px 24px;
   display: flex;
+  height: 250px;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .results {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.results__tip-amount {
+.results__tip-amount, .results__total-person, .results__total-amount {
   font-size: 0.75em;
   color: hsl(189deg, 41%, 97%);
 }
@@ -186,7 +188,7 @@ body {
   font-size: 0.65em;
   color: hsl(185deg, 41%, 84%);
 }
-.results__tip-value {
+.results__tip-value, .results__total-value {
   font-size: 1.2em;
   color: hsl(172deg, 67%, 45%);
   text-align: right;

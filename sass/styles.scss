@@ -80,8 +80,9 @@
     border-radius: 12px;
     padding: 42px 24px 24px;
     display: flex;
+    height: 250px;
     flex-direction: column;
-    //justify-content: space-between;
+    justify-content: space-between;
     
 
 }
@@ -105,9 +106,15 @@
        text-align: right;
     }
     &__total-amount{
-        
+        @extend.results__tip-amount;
     }
-}
+    &__total-person{
+        @extend.results__tip-amount;
+    }
+    
+    &__total-value{
+        @extend.results__tip-value;
+    }}
 
 
 
