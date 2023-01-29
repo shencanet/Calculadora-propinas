@@ -36,15 +36,14 @@ body {
 .inputs-section__bill-input {
   font-family: "Space Mono", monospace;
   font-size: 1em;
-  border: 1px solid red;
-  border-radius: 4px;
   text-align: right;
+  caret-color: hsl(172deg, 67%, 45%);
+  border-radius: 4px;
   padding-right: 10px;
   border: none;
-  caret-color: hsl(172deg, 67%, 45%);
   width: 100%;
   height: 48px;
-  background-color: hsl(189deg, 41%, 97%);
+  margin-bottom: 30px;
   background-image: url("../images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position: 10px center;
@@ -62,6 +61,27 @@ body {
 .inputs-section__bill-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.btns {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.btns__legend {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+
+.btns__button {
+  width: 147px;
+  height: 50px;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
 }
 
 .attribution {

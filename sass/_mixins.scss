@@ -10,16 +10,16 @@
 @mixin input($icon){
     font-family: variables.$font;
     font-size: 1em;
-    border: 1px solid red;
-    border-radius: 4px;
     text-align: right;
+    caret-color: variables.$Strong-cyan;
+    border-radius: 4px;
     padding-right: 10px;
     border: none;
-    caret-color: variables.$Strong-cyan;
     width: 100%;
-    
     height: 48px;
-    background-color: variables.$Very-light-grayish-cyan;
+    margin-bottom: 30px;
+
+    
     &:hover{
         cursor: pointer;
     }

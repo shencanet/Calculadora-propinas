@@ -28,6 +28,25 @@
 }
 
 
+.btns{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    &__legend{
+        @include mixins.label;
+    }
+    
+
+}
+.btns__button{
+    width: 147px;
+    height: 50px;
+    background-color: variables.$Very-dark-cyan;
+    color: variables.$Very-light-grayish-cyan;
+}
+
 .attribution{
     font-size: 11px;
     text-align: center;
