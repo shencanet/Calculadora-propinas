@@ -170,12 +170,27 @@ body {
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 12px;
   padding: 42px 24px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .results {
-  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
+.results__tip-amount {
+  font-size: 0.75em;
+  color: hsl(189deg, 41%, 97%);
+}
+.results__tip-person {
+  font-size: 0.65em;
+  color: hsl(185deg, 41%, 84%);
+}
+.results__tip-value {
+  font-size: 1.2em;
+  color: hsl(172deg, 67%, 45%);
+  text-align: right;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
