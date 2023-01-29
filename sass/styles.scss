@@ -56,7 +56,12 @@
 
 }&__custom{
     @include mixins.input(unset);
-}
+    text-align: center;
+    color: variables.$Dark-grayish-cyan;
+}}
+.inputs-section__people-label{
+    @include mixins.label;
+    //border: 1px solid red;
 
 }
 
