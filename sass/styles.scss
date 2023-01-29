@@ -70,6 +70,13 @@
 .error{
     border: 2px solid;
     border-color:rgb(164, 68, 68) ;
+    &::after{
+        content: ''
+    }
+}
+
+.result-section{
+    background-color: variables.$Very-dark-cyan;
 }
 
 .attribution{

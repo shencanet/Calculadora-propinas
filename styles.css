@@ -162,6 +162,13 @@ body {
   border: 2px solid;
   border-color: rgb(164, 68, 68);
 }
+.error::after {
+  content: "";
+}
+
+.result-section {
+  background-color: hsl(183deg, 100%, 15%);
+}
 
 .attribution {
   font-size: 11px;
