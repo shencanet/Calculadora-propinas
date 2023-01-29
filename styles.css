@@ -168,6 +168,12 @@ body {
 
 .result-section {
   background-color: hsl(183deg, 100%, 15%);
+  border-radius: 12px;
+  padding: 42px 24px 24px;
+}
+
+.results {
+  border: 1px solid white;
 }
 
 .attribution {
