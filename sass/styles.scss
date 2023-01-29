@@ -64,7 +64,13 @@
     //border: 1px solid red;
 
 }
-
+.inputs-section__people-input{
+    @include mixins.input('./images/icon-person.svg');
+}
+.error{
+    border: 2px solid;
+    border-color:rgb(164, 68, 68) ;
+}
 
 .attribution{
     font-size: 11px;

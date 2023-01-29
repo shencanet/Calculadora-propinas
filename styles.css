@@ -128,6 +128,41 @@ body {
   margin-bottom: 8px;
 }
 
+.inputs-section__people-input {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  caret-color: hsl(172deg, 67%, 45%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  /*
+  background-repeat: no-repeat;
+  background-position: 10px center;*/
+}
+.inputs-section__people-input:hover {
+  cursor: pointer;
+}
+.inputs-section__people-input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.inputs-section__people-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+  border: 2px solid;
+  border-color: rgb(164, 68, 68);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
