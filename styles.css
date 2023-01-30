@@ -210,8 +210,9 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  margin: 40px 0;
 }
 
 .attribution a {
@@ -227,6 +228,24 @@ body {
     width: 900px;
     display: flex;
     gap: 50px;
+  }
+  .inputs-section {
+    flex: 1;
+  }
+  .result-section {
+    flex: 1;
+  }
+  .btns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .btns__button {
+    width: 120px;
+  }
+  .results__tip-value, .results__total-value {
+    font-size: 2em;
+  }
+  .results__total-value {
+    font-size: 2em;
   }
 }
 
