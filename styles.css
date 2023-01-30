@@ -218,4 +218,11 @@ body {
   color: hsl(228deg, 45%, 44%);
 }
 
+/*----------------------------DESKTOP--------------------------*/
+@media (min-width: 1080px) {
+  body {
+    background-color: red;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
