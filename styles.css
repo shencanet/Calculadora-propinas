@@ -220,8 +220,13 @@ body {
 
 /*----------------------------DESKTOP--------------------------*/
 @media (min-width: 1080px) {
-  body {
-    background-color: red;
+  .header_title {
+    margin: 160px 0 90px;
+  }
+  .calculator-container {
+    width: 900px;
+    display: flex;
+    gap: 50px;
   }
 }
 
