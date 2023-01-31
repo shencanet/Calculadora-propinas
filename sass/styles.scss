@@ -151,16 +151,16 @@
   }
   .btns {
     grid-template-columns: 1fr 1fr 1fr;
-    &__button{
-        width: 120px;
+    &__button {
+      width: 120px;
     }
   }
-  .results{
-    &__tip-value{
-font-size: 2em;
+  .results {
+    &__tip-value {
+      font-size: 2em;
     }
-    &__total-value{
-        font-size: 2em;
+    &__total-value {
+      font-size: 2em;
     }
   }
 }
