@@ -3,7 +3,9 @@ let people = document.querySelector('.inputs-section__people-input');
 let buttons = document.querySelectorAll('.btns__button');
 
 buttons.forEach(element => {
-   console.log(element) 
+  element.addEventListener('click', event=>{
+    console.log(event.target.innerText.slice(0, 2));
+  });
 })
 
 
