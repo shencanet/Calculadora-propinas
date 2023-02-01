@@ -45,12 +45,18 @@
     &:hover {
       cursor: pointer;
     }
+    
   }
   &__custom {
     @include mixins.input(unset);
     text-align: center;
     color: variables.$Dark-grayish-cyan;
   }
+  
+}
+.btns__button--selected{
+      background-color: variables.$Strong-cyan;
+      color: variables.$Very-dark-cyan;
 }
 .inputs-section__people-label {
   @include mixins.label;

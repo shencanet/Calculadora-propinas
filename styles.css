@@ -121,6 +121,11 @@ body {
   margin: 0;
 }
 
+.btns__button--selected {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
 .inputs-section__people-label {
   display: block;
   color: hsl(186deg, 14%, 43%);
