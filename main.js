@@ -8,6 +8,14 @@ let buttons = document.querySelectorAll('.btns__button');
 
 buttons.forEach(element => {
   element.addEventListener('click', event=>{
+    //CAMBIAR ESTILOS
+    buttons.forEach(element =>{
+      element.classList.remove('btns__button--selected');
+    } ) 
+    element.classList.add('btns__button--selected');
+
+
+
     let tipValue = parseInt(event.target.innerText.slice(0, -1))
     //console.log(tipValue);
     //calculo de la propina
