@@ -12,9 +12,10 @@ buttons.forEach(element => {
     //console.log(tipValue);
     //calculo de la propina
   
-   tipResult.innerText = (((billNumber * tipValue) / 100)/peopleNumber);
+   tipResult.innerText = (((billNumber * tipValue) / 100) / peopleNumber);
    //calculo del total
-   totalResult.innerHTML = (((billNumber * tipValue / 100 ) + billNumber)/peopleNumber);
+   totalResult.innerText = (((billNumber * tipValue) / 100  + billNumber)/peopleNumber);
+
 
     
   });
