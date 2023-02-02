@@ -26,6 +26,13 @@ bill.addEventListener("input", ()=>{
   billNumber = parseFloat(bill.value);
   calculateTip();
 });
+//actualizando personas
+people.addEventListener("input", ()=>{
+  peopleNumber = parseFloat(people.value);
+  calculateTip();
+});
+
+
 
 function calculateTip() {
   tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber).toFixed(2);
