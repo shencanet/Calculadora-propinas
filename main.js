@@ -5,24 +5,28 @@ let peopleNumber = parseInt(people.value);
 let tipResult = document.querySelector(".results__tip-value");
 let totalResult = document.querySelector(".results__total-value");
 let buttons = document.querySelectorAll(".btns__button");
+let tipValue = 0;
 
-buttons.forEach(element => {
-  element.addEventListener("click", event => {
- 
-    buttons.forEach(element => {
-      element.classList.remove('btns__button--selected')
-      });
+buttons.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    buttons.forEach((element) => {
+      element.classList.remove("btns__button--selected");
+    });
 
-      element.classList.add('btns__button--selected');
-    
+    element.classList.add("btns__button--selected");
 
-    let tipValue = parseInt(event.target.innerText.slice(0, -1));
-   
-
-    tipResult.innerText = ((billNumber * tipValue / 100) / peopleNumber);
-    
-    totalResult.innerText = (((billNumber * tipValue / 100) + billNumber) / peopleNumber);
-    
+    tipValue = parseInt(event.target.innerText.slice(0, -1));
   });
-})
+});
+//actualizar factura Bill
 
+bill.addEventListener("input", ()=>{
+  billNumber = parseFloat(bill.value);
+  calculateTip();
+});
+
+function calculateTip() {
+  tipResult.innerText = (((billNumber * tipValue) / 100) / peopleNumber);
+
+  totalResult.innerText =((billNumber * tipValue / 100) + billNumber) / peopleNumber;
+}
