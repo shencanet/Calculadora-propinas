@@ -70,10 +70,9 @@
   @include mixins.input("./images/icon-person.svg");
 }
 .error {
-  border: 2px solid;
-  border-color: rgb(164, 68, 68);
-  &::after {
-    content: "";
+  color: rgb(164, 68, 68);
+  &::after{
+    content: "Can´t Be Zero";
   }
 }
 

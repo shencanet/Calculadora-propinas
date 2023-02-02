@@ -1,5 +1,5 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-*/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -165,11 +165,10 @@ body {
 }
 
 .error {
-  border: 2px solid;
-  border-color: rgb(164, 68, 68);
+  color: rgb(164, 68, 68);
 }
 .error::after {
-  content: "";
+  content: "Can´t Be Zero";
 }
 
 .result-section {

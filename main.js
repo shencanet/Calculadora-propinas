@@ -6,6 +6,7 @@ let tipResult = document.querySelector(".results__tip-value");
 let totalResult = document.querySelector(".results__total-value");
 let buttons = document.querySelectorAll(".btns__button");
 let tipValue = 5;
+let alert = document.querySelector("#alert");
 
 buttons.forEach((element) => {
   element.addEventListener("click", event => {
@@ -29,6 +30,13 @@ bill.addEventListener("input", ()=>{
 //actualizando personas
 people.addEventListener("input", ()=>{
   peopleNumber = parseFloat(people.value);
+
+  if(peopleNumber == 0){
+    people.style.borderColor = 'red';
+    
+    alert.classList.add('error');
+    
+  }
   calculateTip();
 });
 
@@ -39,3 +47,4 @@ function calculateTip() {
 
   totalResult.innerText =(((billNumber * tipValue / 100) + billNumber) / peopleNumber).toFixed(2);
 }
+
