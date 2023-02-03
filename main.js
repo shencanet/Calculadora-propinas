@@ -61,7 +61,15 @@ people.addEventListener("input", ()=>{
   
 });
 //reset
- let reset = document.querySelector('.results-section__reset');
+ let resetBtn = document.querySelector('.results-section__reset');
+ resetBtn.addEventListener('click', () =>{
+    bill.value = 0;
+    billNumber = 0;
+    people.value = 5;
+    peopleNumber = 5;
+    custom.value = 'custom';
+    calculateTip();    
+ })
 
 
 function calculateTip() {
