@@ -32,7 +32,12 @@ bill.addEventListener("input", ()=>{
 let custom =document.querySelector('.btns__custom');
 custom.addEventListener("input", ()=>{
   tipValue = parseInt(custom.value);
+ if(isNaN(tipValue)){
+
+ }else{
   calculateTip();
+ }
+  
 });
 
 
@@ -55,7 +60,8 @@ people.addEventListener("input", ()=>{
   }
   
 });
-
+//reset
+ let reset = document.querySelector('.results-section__reset');
 
 
 function calculateTip() {
