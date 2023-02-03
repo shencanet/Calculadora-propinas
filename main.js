@@ -27,20 +27,33 @@ bill.addEventListener("input", ()=>{
   billNumber = parseFloat(bill.value);
   calculateTip();
 });
+
+//VALOR custom
+let custom =document.querySelector('.btns__custom');
+custom.addEventListener("input", ()=>{
+  tipValue = parseInt(custom.value);
+  calculateTip();
+});
+
+
+
+
 //actualizando personas
 people.addEventListener("input", ()=>{
   peopleNumber = parseFloat(people.value);
 
-  if(peopleNumber == 0){
+  if(peopleNumber <= 0 || isNaN(peopleNumber)){
     people.style.borderColor = 'rgb(164, 68, 68)';
     
     alert.classList.add('error');
     
+    
   }else{
     alert.classList.remove('error');
     people.style.borderColor = 'hsl(189, 41%, 97%)';
+    calculateTip();
   }
-  calculateTip();
+  
 });
 
 
