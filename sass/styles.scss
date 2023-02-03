@@ -73,6 +73,7 @@
   color: rgb(164, 68, 68);
   &::after{
     content: "Can´t Be Zero";
+    font-size: 0.7em;
   }
 }
 

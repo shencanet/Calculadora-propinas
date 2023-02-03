@@ -169,6 +169,7 @@ body {
 }
 .error::after {
   content: "Can´t Be Zero";
+  font-size: 0.7em;
 }
 
 .result-section {

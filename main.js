@@ -32,10 +32,13 @@ people.addEventListener("input", ()=>{
   peopleNumber = parseFloat(people.value);
 
   if(peopleNumber == 0){
-    people.style.borderColor = 'red';
+    people.style.borderColor = 'rgb(164, 68, 68)';
     
     alert.classList.add('error');
     
+  }else{
+    alert.classList.remove('error');
+    people.style.borderColor = 'hsl(189, 41%, 97%)';
   }
   calculateTip();
 });
