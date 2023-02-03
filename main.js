@@ -10,9 +10,7 @@ let alert = document.querySelector("#alert");
 
 buttons.forEach((element) => {
   element.addEventListener("click", event => {
-    buttons.forEach(element => {
-      element.classList.remove("btns__button--selected");
-    });
+    removeActive();
 
     element.classList.add("btns__button--selected");
 
@@ -21,6 +19,12 @@ buttons.forEach((element) => {
     calculateTip();
   });
 });
+
+function removeActive(){
+  buttons.forEach(element => {
+    element.classList.remove("btns__button--selected");
+  });
+}
 //actualizar factura Bill
 
 bill.addEventListener("input", ()=>{
@@ -28,9 +32,12 @@ bill.addEventListener("input", ()=>{
   calculateTip();
 });
 
+
+
 //VALOR custom
 let custom =document.querySelector('.btns__custom');
 custom.addEventListener("input", ()=>{
+  removeActive()
   tipValue = parseInt(custom.value);
  if(isNaN(tipValue)){
 
